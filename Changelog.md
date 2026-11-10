@@ -21,6 +21,8 @@
      GitHub, so they never reach users. -->
 ## v2.6.0
 
+- 新增侧栏品牌旁的低调 Leeon 标记，以区分个人定制版本
+
 <details>
 <summary><strong> 🐞 修复问题 </strong></summary>
 

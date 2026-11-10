@@ -21,6 +21,20 @@ A Clash Meta GUI based on <a href="https://github.com/tauri-apps/tauri">Tauri</a
   <a href="./README.md">简体中文</a>
 </p>
 
+## Leeon edition
+
+This is [Leeon's public fork](https://github.com/heyleeon/clash-verge-rev) of
+[Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev), maintained on
+the `leeon/custom` branch. It follows upstream `dev` and keeps personal changes
+small: a subdued **Leeon** signature beside the sidebar wordmark, plus upstream
+fixes needed for daily use. The current base includes the macOS DNS recovery fix
+[`f076d4c`](https://github.com/clash-verge-rev/clash-verge-rev/commit/f076d4cd5de03eaf0c9d4fca72dce2843ca5760f).
+
+This edition is independently maintained and is not an official upstream release.
+The upstream attribution and GPL-3.0 license are preserved. To update the custom
+branch, fetch upstream and merge `upstream/dev`; keep machine-specific profiles,
+credentials, signing keys, and build output outside Git.
+
 ## Preview
 
 | Dark                             | Light                             |

@@ -141,7 +141,28 @@ export const LayoutSidebar = (props: LayoutSidebarProps) => {
             }}
             inheritViewBox
           />
-          <LogoSvg fill={isDark ? 'white' : 'black'} />
+          <Box
+            sx={{ position: 'relative', width: 117, height: 27, flexShrink: 0 }}
+          >
+            <LogoSvg fill={isDark ? 'white' : 'black'} />
+            <Box
+              component="span"
+              sx={{
+                position: 'absolute',
+                top: 26,
+                right: 0,
+                fontSize: 9,
+                fontWeight: 500,
+                lineHeight: 1,
+                letterSpacing: '0.04em',
+                color: 'text.secondary',
+                opacity: 0.7,
+                pointerEvents: 'none',
+              }}
+            >
+              Leeon
+            </Box>
+          </Box>
         </div>
         <UpdateButton className="the-newbtn" />
       </div>
