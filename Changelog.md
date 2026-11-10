@@ -21,7 +21,7 @@
      GitHub, so they never reach users. -->
 ## v2.6.0
 
-- 新增侧栏品牌旁的低调 Leeon 标记，以区分个人定制版本
+- 新增同一行的 Leeon 后缀，应用与窗口统一显示为 Clash Verge Leeon，保留原图标
 
 <details>
 <summary><strong> 🐞 修复问题 </strong></summary>

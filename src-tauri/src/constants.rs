@@ -1,5 +1,7 @@
 use std::time::Duration;
 
+pub const APP_NAME: &str = "Clash Verge Leeon";
+
 pub mod network {
     pub const DEFAULT_EXTERNAL_CONTROLLER: &str = "127.0.0.1:9097";
 

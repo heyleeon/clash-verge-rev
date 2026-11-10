@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next'
 
 import iconDark from '@/assets/image/icon_dark.svg?react'
 import iconLight from '@/assets/image/icon_light.svg?react'
-import LogoSvg from '@/assets/image/logo.svg?react'
 import { useVerge } from '@/hooks/use-verge'
 import { useNavMenuOrder } from '@/pages/_layout/hooks'
 import { navItems } from '@/pages/_navigation'
@@ -125,38 +124,51 @@ export const LayoutSidebar = (props: LayoutSidebarProps) => {
         <div
           data-tauri-drag-region="true"
           style={{
-            height: '27px',
+            height: '32px',
             display: 'flex',
-            justifyContent: 'space-between',
+            alignItems: 'center',
+            gap: '8px',
           }}
         >
           <SvgIcon
             component={isDark ? iconDark : iconLight}
             style={{
-              height: '36px',
-              width: '36px',
-              marginTop: '-3px',
-              marginRight: '5px',
-              marginLeft: '-3px',
+              height: '28px',
+              width: '28px',
+              flexShrink: 0,
             }}
             inheritViewBox
           />
           <Box
-            sx={{ position: 'relative', width: 117, height: 27, flexShrink: 0 }}
+            className="brand-wordmark"
+            sx={{
+              display: 'flex',
+              alignItems: 'baseline',
+              gap: '5px',
+              whiteSpace: 'nowrap',
+              fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+            }}
           >
-            <LogoSvg fill={isDark ? 'white' : 'black'} />
             <Box
               component="span"
               sx={{
-                position: 'absolute',
-                top: 26,
-                right: 0,
-                fontSize: 9,
+                fontSize: 15,
+                fontWeight: 650,
+                letterSpacing: '-0.035em',
+                lineHeight: 1.2,
+                color: 'text.primary',
+              }}
+            >
+              Clash Verge
+            </Box>
+            <Box
+              component="span"
+              sx={{
+                fontSize: 10,
                 fontWeight: 500,
                 lineHeight: 1,
-                letterSpacing: '0.04em',
+                letterSpacing: '0.01em',
                 color: 'text.secondary',
-                opacity: 0.7,
                 pointerEvents: 'none',
               }}
             >
