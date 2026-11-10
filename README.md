@@ -35,6 +35,11 @@ The upstream attribution and GPL-3.0 license are preserved. To update the custom
 branch, fetch upstream and merge `upstream/dev`; keep machine-specific profiles,
 credentials, signing keys, and build output outside Git.
 
+For macOS TUN use, select **Native** for the TUN DNS mode. This lets Mihomo own a
+temporary catch-all resolver on the TUN interface instead of relying only on
+rewriting each physical network service's DNS after a switch. Keep this as a
+device setting; subscription profiles and credentials do not belong in the fork.
+
 ## Preview
 
 | Dark                             | Light                             |
